@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftDate
 
 class TimerTableViewController: UITableViewController {
     @IBOutlet var timeTableView: UITableView!
@@ -95,6 +96,8 @@ extension TimerTableViewController {
         
         let timer = TimeSince()
         
+        print(timer.start)
+        
         self.timerList.append(timer)
         
         let indexPath = IndexPath(row: self.timerList.count - 1, section: 0)
@@ -102,6 +105,9 @@ extension TimerTableViewController {
         self.tableView.beginUpdates()
         self.tableView.insertRows(at: [indexPath], with: .top)
         self.tableView.endUpdates()
+        
+        // let test = DateInRegion()
+        // print(test)
     }
     
     @objc func updateTimer() {

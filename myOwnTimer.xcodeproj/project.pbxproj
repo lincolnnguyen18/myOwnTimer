@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98CA6543FC39198CE796D285 /* Pods_myOwnTimer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8FB63193F728058E468E6F /* Pods_myOwnTimer.framework */; };
 		D48624FE25D9481E00733237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48624FD25D9481E00733237 /* AppDelegate.swift */; };
 		D486250025D9481E00733237 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48624FF25D9481E00733237 /* SceneDelegate.swift */; };
 		D486250525D9481E00733237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D486250325D9481E00733237 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		78341C3F2049909456011001 /* Pods-myOwnTimer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myOwnTimer.release.xcconfig"; path = "Target Support Files/Pods-myOwnTimer/Pods-myOwnTimer.release.xcconfig"; sourceTree = "<group>"; };
 		D48624FA25D9481E00733237 /* myOwnTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myOwnTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48624FD25D9481E00733237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D48624FF25D9481E00733237 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		D486251225D94C6F00733237 /* TimerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewCell.swift; sourceTree = "<group>"; };
 		D486251A25D94E8A00733237 /* TimerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerTableViewController.swift; sourceTree = "<group>"; };
 		D486252325D9537400733237 /* TimeSince.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSince.swift; sourceTree = "<group>"; };
+		DF8FB63193F728058E468E6F /* Pods_myOwnTimer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myOwnTimer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F09D9E6A1032C17B02E200D6 /* Pods-myOwnTimer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myOwnTimer.debug.xcconfig"; path = "Target Support Files/Pods-myOwnTimer/Pods-myOwnTimer.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CA6543FC39198CE796D285 /* Pods_myOwnTimer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BEE6171E089CA6F05DDE6F1B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF8FB63193F728058E468E6F /* Pods_myOwnTimer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D48624F125D9481E00733237 = {
 			isa = PBXGroup;
 			children = (
 				D48624FC25D9481E00733237 /* myOwnTimer */,
 				D48624FB25D9481E00733237 /* Products */,
+				EE49FA6A7CBAC18588A8216D /* Pods */,
+				BEE6171E089CA6F05DDE6F1B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +88,15 @@
 			path = myOwnTimer;
 			sourceTree = "<group>";
 		};
+		EE49FA6A7CBAC18588A8216D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F09D9E6A1032C17B02E200D6 /* Pods-myOwnTimer.debug.xcconfig */,
+				78341C3F2049909456011001 /* Pods-myOwnTimer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D486250E25D9482200733237 /* Build configuration list for PBXNativeTarget "myOwnTimer" */;
 			buildPhases = (
+				E9AA2A8D5B8445791EBB8F16 /* [CP] Check Pods Manifest.lock */,
 				D48624F625D9481E00733237 /* Sources */,
 				D48624F725D9481E00733237 /* Frameworks */,
 				D48624F825D9481E00733237 /* Resources */,
+				E1384CF27D8AEBD92CFB5C37 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,6 +163,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E1384CF27D8AEBD92CFB5C37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myOwnTimer/Pods-myOwnTimer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myOwnTimer/Pods-myOwnTimer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myOwnTimer/Pods-myOwnTimer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9AA2A8D5B8445791EBB8F16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myOwnTimer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D48624F625D9481E00733237 /* Sources */ = {
@@ -291,6 +359,7 @@
 		};
 		D486250F25D9482200733237 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F09D9E6A1032C17B02E200D6 /* Pods-myOwnTimer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +379,7 @@
 		};
 		D486251025D9482200733237 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78341C3F2049909456011001 /* Pods-myOwnTimer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

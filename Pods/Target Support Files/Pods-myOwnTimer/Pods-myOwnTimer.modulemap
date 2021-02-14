@@ -1,0 +1,6 @@
+framework module Pods_myOwnTimer {
+  umbrella header "Pods-myOwnTimer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -57,11 +57,11 @@ class TimerTableViewCell: UITableViewCell {
         // timeLabel.text = times.joined(separator: " ")
         
         if hours > 0 {
-            timeLabel.text = "\(hours)h"
+            timeLabel.text = " · \(hours)h"
         } else if minutes > 0 {
-            timeLabel.text = "\(minutes)m"
+            timeLabel.text = " · \(minutes)m"
         } else if seconds > 0 {
-            timeLabel.text = "\(seconds)s"
+            timeLabel.text = " · \(seconds)s"
         }
     }
 }
